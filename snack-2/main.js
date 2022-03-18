@@ -5,22 +5,18 @@
 
 let numeroCreatore = parseInt(prompt("Quanti array vuoi creare ?"));
 
-let arrayUno = [];
 
-i=0;
-// l=0;
+ l=0;
 
-// while (l <= numeroCreatore) {
-//     let array[l] = [];
+ while (l < numeroCreatore) {
+     let arrayTot = [];
 
-    while (i<10) {
-        arrayUno.push(Math.floor(Math.random()*100));
-        i++;
+    for (i=0; i<10; i++) {
+        arrayTot.push(Math.floor(Math.random()*100) + 1);
+
     }
-// }
 
-// Come cavolo si fa a far creare un array al pc
+    console.log(arrayTot);
 
-
-
-console.log(arrayUno);
+    l++
+ }

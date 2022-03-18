@@ -26,9 +26,36 @@ console.log(lista)
 
 let nomeImbucato = prompt("Buonasera signore può gentilmente dirmi il suo nome ? ");
 
+nomeOk = false;
+
 l=0;
 
 while (l < lista.length) {
+
+    if (nomeImbucato == lista[l]) {
+        console.log(nomeImbucato,lista[l])        
+    }
+
+    l++;
     
 }
 
+let email = prompt("Qual è la tua mail ?");
+    let arrayAccesso = [`banana@hotmail`,`jabroni@outlook`, `tanc@hotmail`];
+    let mailOk = false
+
+    for( i=0; i < arrayAccesso.length; i++ ){
+
+        if( email == arrayAccesso[i]){
+            console.log(email , arrayAccesso[i])
+            mailOk = true
+        }
+    }
+         if ( email == arrayAccesso[i] ){
+             console.log(email , arrayAccesso[i])
+             document.getElementById("msg_appropriato").innerHTML = `<div class= "green">Accesso consentito tramite mail: <span class= "blue">"${email}"</span>  al server Boolean.</div>`;
+            
+         } else {
+             console.log(email , arrayAccesso[i])
+             document.getElementById("msg_inappropriato").innerHTML = `<div class="red">Accesso non consentito tramite mail: <span class= "blue">"${email}"</span> al server Boolean, la SWAT è in viaggio verso casa sua.</div>`;          
+         }
